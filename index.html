@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación 4.1</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="headline">
+            <h1>Generaciones.</h1>
+        </div>
+        <template>
+            <select v-model="opcionElegida">
+                <option disabled value="">Seleccione un elemento</option>
+                <option v-for='imagen of imagenes' :value='imagen'>{{imagen.nombre}}</option>
+            </select>
+        </template>
+        <br>
+        <template v-if="opcionElegida">
+            <img :src="opcionElegida.url">
+            <p>{{opcionElegida.definicion}}</p>
+        </template>
+
+    </div>
+    <footer>
+        <div class="copyright">
+            <img src="img/KOMRADKITTEN.gif" class="aprovalImg">
+            <span> &copy; ATW! 2021. </span>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

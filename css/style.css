@@ -1,0 +1,64 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    background-color: black;
+}
+
+.headline {
+    height: 80px;
+    width: 350px;
+    border: solid 5px red;
+    border-radius: 10px;
+    color: red;
+    text-align:justify;
+    padding: 20px;
+    margin: 10px;
+}
+
+select {
+    margin: 10px;
+    width: 200px;
+    height: 30px;
+    font-size: 16px;
+    text-align: center;
+}
+
+img {
+    width: 320px;
+    padding: 10px;
+    border: solid 10px red;
+    position: relative;
+    left: 35px;    
+}
+
+p {
+    border: solid 3px red;
+    width: 350px;
+    margin: 10px;
+    padding: 5px;
+    font-size: 16px;
+    position: relative;
+    left: 23px;
+
+}
+
+.copyright {
+    width: 350px;
+    position: relative;
+    left: 50px;
+
+}
+
+.aprovalImg {
+    border: none;
+    width: 100px;
+    transform: rotate(-25deg);
+    position: relative;
+    top: 8px;
+    left: -5px;
+}
